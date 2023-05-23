@@ -36,14 +36,15 @@ body {
     color:#ffffff;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
     text-align: center;
     width:33%;
     align-items: center;
 }
 
 #PUPPY {
-    width:50%
+    width:50%;
+    border-radius: 50%;
+
 }
 
 @media only screen and (max-width: 768px) {
