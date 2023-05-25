@@ -14,7 +14,12 @@ function countDown() {
         dateDifferenceMinutes = Math.floor((dateDifference / 1000 / 60) % 60);
         dateDifferenceHours = Math.floor((dateDifference / (1000 * 60 * 60)) % 24);
         dateDifferenceDays = Math.floor(dateDifference / (1000 * 60 * 60 * 24));
-        countdown.days.textContent=dateDifferenceDays + " day.";
+        if (dateDifferenceDays == 1) {
+            countdown.days.textContent=dateDifferenceDays + " day.";
+        }
+        else if (dateDifferenceDays != 1) {
+            countdown.days.textContent=dateDifferenceDays + " days.";
+        }
         countdown.hours.textContent=dateDifferenceHours + " hours.";
         countdown.minutes.textContent=dateDifferenceMinutes + " minutes.";
         countdown.seconds.textContent=dateDifferenceSeconds + " seconds.";
