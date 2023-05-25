@@ -14,7 +14,7 @@ function countDown() {
         dateDifferenceMinutes = Math.floor((dateDifference / 1000 / 60) % 60);
         dateDifferenceHours = Math.floor((dateDifference / (1000 * 60 * 60)) % 24);
         dateDifferenceDays = Math.floor(dateDifference / (1000 * 60 * 60 * 24));
-        countdown.days.textContent=dateDifferenceDays + " days.";
+        countdown.days.textContent=dateDifferenceDays + " day.";
         countdown.hours.textContent=dateDifferenceHours + " hours.";
         countdown.minutes.textContent=dateDifferenceMinutes + " minutes.";
         countdown.seconds.textContent=dateDifferenceSeconds + " seconds.";
