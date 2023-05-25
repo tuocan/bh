@@ -3,7 +3,7 @@ let countdown = {
     seconds: document.getElementById('seconds'),
     minutes: document.getElementById('minutes'),
     hours: document.getElementById('hours'),
-    days: document.getElementById('days'),
+//    days: document.getElementById('days'),
 };
 function countDown() {
     let date = new Date();
@@ -13,13 +13,13 @@ function countDown() {
         dateDifferenceSeconds = Math.floor((dateDifference / 1000) % 60);
         dateDifferenceMinutes = Math.floor((dateDifference / 1000 / 60) % 60);
         dateDifferenceHours = Math.floor((dateDifference / (1000 * 60 * 60)) % 24);
-        dateDifferenceDays = Math.floor(dateDifference / (1000 * 60 * 60 * 24));
-        if (dateDifferenceDays == 1) {
-            countdown.days.textContent=dateDifferenceDays + " day.";
-        }
-        else if (dateDifferenceDays != 1) {
-            countdown.days.textContent=dateDifferenceDays + " days.";
-        }
+//        dateDifferenceDays = Math.floor(dateDifference / (1000 * 60 * 60 * 24));
+//        if (dateDifferenceDays == 1) {
+//            countdown.days.textContent=dateDifferenceDays + " day.";
+//        }
+//        else if (dateDifferenceDays != 1) {
+//            countdown.days.textContent=dateDifferenceDays + " days.";
+//        }
         countdown.hours.textContent=dateDifferenceHours + " hours.";
         countdown.minutes.textContent=dateDifferenceMinutes + " minutes.";
         countdown.seconds.textContent=dateDifferenceSeconds + " seconds.";
